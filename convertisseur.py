@@ -1,6 +1,23 @@
 from tkinter import *
 def Historique(bouton):
-    print("W.I.P")
+    if(bouton=="plus"):
+        global navig
+        global histonav
+        if(navig<=1):
+            histform=histonav[len(histonav)-navig]
+            lecture.set(histform)
+        else:
+            navig=navig-1
+            histform=histonav[len(histonav)-navig]
+            lecture.set(histform)
+    if(bouton=="moins"):
+        if(navig>=(len(histonav)-1)):
+            histform=histonav[len(histonav)-navig]
+            lecture.set(histform)
+        else:
+            navig=navig+1
+            histform=histonav[len(histonav)-navig]
+            lecture.set(histform)
 def clique(toconv):
     global requette
     global resultat
@@ -411,7 +428,8 @@ saisie.place(x=97,y=75)
 resultat=StringVar()
 output=Label(page,textvariable=resultat,font=('times 10'), width=35, height=2)
 output.place(x=83,y=315)
-historique=Label(page,textvariable=lecture,font=('times 10'), width=35, height=2).place(x=83,y=365)
+historique=Label(page,textvariable=lecture,font=('times 10'), width=35, height=2)
+historique.place(x=83,y=365)
 boutonlivre = Button(page,text="£",height= 3,command=lambda: clique("£"), width=7,cursor = "hand2").place(x=75,y=175)
 boutonfranc = Button(page,text="₣",height= 3,command=lambda: clique("₣"), width=7,cursor = "hand2").place(x=145,y=175)
 boutoneuro = Button(page,text="€",height= 3,command=lambda: clique("€"), width=7,cursor = "hand2").place(x=215,y=175)

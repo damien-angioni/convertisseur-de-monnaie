@@ -1,4 +1,6 @@
 from tkinter import *
+def Historique(bouton):
+    print("W.I.P")
 def clique(toconv):
     global requette
     global resultat
@@ -66,8 +68,45 @@ def clique(toconv):
                 expression=expression+traité[i]
             i=i+1
         if(toconv=="£"):
-            print("£")
-        print(saisie)
+            devise_traduite=livrest*float(expression)/francche
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"£")
+            histonav.append(str(devise_traduite)+"£")
+        elif(toconv=="₣"):
+            devise_traduite=francche*float(expression)/francche
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₣")
+            histonav.append(str(devise_traduite)+"₣")
+        elif(toconv=="€"):
+            devise_traduite=euro*float(expression)/francche
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"€")
+            histonav.append(str(devise_traduite)+"€")
+        elif(toconv=="$"):
+            devise_traduite=dollarus*float(expression)/francche
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"$")
+            histonav.append(str(devise_traduite)+"$")
+        elif(toconv=="₽"):
+            devise_traduite=roubleru*float(expression)/francche
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₽")
+            histonav.append(str(devise_traduite)+"₽")
+        elif(toconv=="₹"):
+            devise_traduite=roupiein*float(expression)/francche
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₹")
+            histonav.append(str(devise_traduite)+"₹")
+        elif(toconv=="¥"):
+            devise_traduite=jpyen*float(expression)/francche
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"¥")
+            histonav.append(str(devise_traduite)+"¥")
+        elif(toconv=="Đ"):
+            devise_traduite=dong*float(expression)/francche
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"Đ")
+            histonav.append(str(devise_traduite)+"Đ")
     elif(chk_euro==True):
         i=0
         while(i<len(traité)):
@@ -75,8 +114,45 @@ def clique(toconv):
                 expression=expression+traité[i]
             i=i+1
         if(toconv=="£"):
-            print("£")
-        print(saisie)
+            devise_traduite=livrest*float(expression)/euro
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"£")
+            histonav.append(str(devise_traduite)+"£")
+        elif(toconv=="₣"):
+            devise_traduite=francche*float(expression)/euro
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₣")
+            histonav.append(str(devise_traduite)+"₣")
+        elif(toconv=="€"):
+            devise_traduite=euro*float(expression)/euro
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"€")
+            histonav.append(str(devise_traduite)+"€")
+        elif(toconv=="$"):
+            devise_traduite=dollarus*float(expression)/euro
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"$")
+            histonav.append(str(devise_traduite)+"$")
+        elif(toconv=="₽"):
+            devise_traduite=roubleru*float(expression)/euro
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₽")
+            histonav.append(str(devise_traduite)+"₽")
+        elif(toconv=="₹"):
+            devise_traduite=roupiein*float(expression)/euro
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₹")
+            histonav.append(str(devise_traduite)+"₹")
+        elif(toconv=="¥"):
+            devise_traduite=jpyen*float(expression)/euro
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"¥")
+            histonav.append(str(devise_traduite)+"¥")
+        elif(toconv=="Đ"):
+            devise_traduite=dong*float(expression)/euro
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"Đ")
+            histonav.append(str(devise_traduite)+"Đ")
     elif(chk_dollarus==True):
         i=0
         while(i<len(traité)):
@@ -84,8 +160,45 @@ def clique(toconv):
                 expression=expression+traité[i]
             i=i+1
         if(toconv=="£"):
-            print("£")
-        print(saisie)
+            devise_traduite=livrest*float(expression)/dollarus
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"£")
+            histonav.append(str(devise_traduite)+"£")
+        elif(toconv=="₣"):
+            devise_traduite=francche*float(expression)/dollarus
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₣")
+            histonav.append(str(devise_traduite)+"₣")
+        elif(toconv=="€"):
+            devise_traduite=euro*float(expression)/dollarus
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"€")
+            histonav.append(str(devise_traduite)+"€")
+        elif(toconv=="$"):
+            devise_traduite=dollarus*float(expression)/dollarus
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"$")
+            histonav.append(str(devise_traduite)+"$")
+        elif(toconv=="₽"):
+            devise_traduite=roubleru*float(expression)/dollarus
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₽")
+            histonav.append(str(devise_traduite)+"₽")
+        elif(toconv=="₹"):
+            devise_traduite=roupiein*float(expression)/dollarus
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₹")
+            histonav.append(str(devise_traduite)+"₹")
+        elif(toconv=="¥"):
+            devise_traduite=jpyen*float(expression)/dollarus
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"¥")
+            histonav.append(str(devise_traduite)+"¥")
+        elif(toconv=="Đ"):
+            devise_traduite=dong*float(expression)/dollarus
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"Đ")
+            histonav.append(str(devise_traduite)+"Đ")
     elif(chk_roubleru==True):
         i=0
         while(i<len(traité)):
@@ -93,8 +206,45 @@ def clique(toconv):
                 expression=expression+traité[i]
             i=i+1
         if(toconv=="£"):
-            print("£")
-        print(saisie)
+            devise_traduite=livrest*float(expression)/roubleru
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"£")
+            histonav.append(str(devise_traduite)+"£")
+        elif(toconv=="₣"):
+            devise_traduite=francche*float(expression)/roubleru
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₣")
+            histonav.append(str(devise_traduite)+"₣")
+        elif(toconv=="€"):
+            devise_traduite=euro*float(expression)/roubleru
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"€")
+            histonav.append(str(devise_traduite)+"€")
+        elif(toconv=="$"):
+            devise_traduite=dollarus*float(expression)/roubleru
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"$")
+            histonav.append(str(devise_traduite)+"$")
+        elif(toconv=="₽"):
+            devise_traduite=roubleru*float(expression)/roubleru
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₽")
+            histonav.append(str(devise_traduite)+"₽")
+        elif(toconv=="₹"):
+            devise_traduite=roupiein*float(expression)/roubleru
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₹")
+            histonav.append(str(devise_traduite)+"₹")
+        elif(toconv=="¥"):
+            devise_traduite=jpyen*float(expression)/roubleru
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"¥")
+            histonav.append(str(devise_traduite)+"¥")
+        elif(toconv=="Đ"):
+            devise_traduite=dong*float(expression)/roubleru
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"Đ")
+            histonav.append(str(devise_traduite)+"Đ")
     elif(chk_roupiein==True):
         i=0
         while(i<len(traité)):
@@ -102,8 +252,45 @@ def clique(toconv):
                 expression=expression+traité[i]
             i=i+1
         if(toconv=="£"):
-            print("£")
-        print(saisie)
+            devise_traduite=livrest*float(expression)/roupiein
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"£")
+            histonav.append(str(devise_traduite)+"£")
+        elif(toconv=="₣"):
+            devise_traduite=francche*float(expression)/roupiein
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₣")
+            histonav.append(str(devise_traduite)+"₣")
+        elif(toconv=="€"):
+            devise_traduite=euro*float(expression)/roupiein
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"€")
+            histonav.append(str(devise_traduite)+"€")
+        elif(toconv=="$"):
+            devise_traduite=dollarus*float(expression)/roupiein
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"$")
+            histonav.append(str(devise_traduite)+"$")
+        elif(toconv=="₽"):
+            devise_traduite=roubleru*float(expression)/roupiein
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₽")
+            histonav.append(str(devise_traduite)+"₽")
+        elif(toconv=="₹"):
+            devise_traduite=roupiein*float(expression)/roupiein
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₹")
+            histonav.append(str(devise_traduite)+"₹")
+        elif(toconv=="¥"):
+            devise_traduite=jpyen*float(expression)/roupiein
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"¥")
+            histonav.append(str(devise_traduite)+"¥")
+        elif(toconv=="Đ"):
+            devise_traduite=dong*float(expression)/roupiein
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"Đ")
+            histonav.append(str(devise_traduite)+"Đ")
     elif(chk_jpyen==True):
         i=0
         while(i<len(traité)):
@@ -111,15 +298,45 @@ def clique(toconv):
                 expression=expression+traité[i]
             i=i+1
         if(toconv=="£"):
-            print("£")
-        i=0
-        while(i<len(traité)):
-            if(traité[i]=="0")or(traité[i]=="1")or(traité[i]=="2")or(traité[i]=="3")or(traité[i]=="4")or(traité[i]=="5")or(traité[i]=="6")or(traité[i]=="7")or(traité[i]=="8")or(traité[i]=="9")or(traité[i]=="."):
-                expression=expression+traité[i]
-            i=i+1
-        if(toconv=="£"):
-            print("£")
-        print(saisie)
+            devise_traduite=livrest*float(expression)/jpyen
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"£")
+            histonav.append(str(devise_traduite)+"£")
+        elif(toconv=="₣"):
+            devise_traduite=francche*float(expression)/jpyen
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₣")
+            histonav.append(str(devise_traduite)+"₣")
+        elif(toconv=="€"):
+            devise_traduite=euro*float(expression)/jpyen
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"€")
+            histonav.append(str(devise_traduite)+"€")
+        elif(toconv=="$"):
+            devise_traduite=dollarus*float(expression)/jpyen
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"$")
+            histonav.append(str(devise_traduite)+"$")
+        elif(toconv=="₽"):
+            devise_traduite=roubleru*float(expression)/jpyen
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₽")
+            histonav.append(str(devise_traduite)+"₽")
+        elif(toconv=="₹"):
+            devise_traduite=roupiein*float(expression)/jpyen
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₹")
+            histonav.append(str(devise_traduite)+"₹")
+        elif(toconv=="¥"):
+            devise_traduite=jpyen*float(expression)/jpyen
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"¥")
+            histonav.append(str(devise_traduite)+"¥")
+        elif(toconv=="Đ"):
+            devise_traduite=dong*float(expression)/jpyen
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"Đ")
+            histonav.append(str(devise_traduite)+"Đ")
     elif(chk_dong==True):
         i=0
         while(i<len(traité)):
@@ -127,8 +344,45 @@ def clique(toconv):
                 expression=expression+traité[i]
             i=i+1
         if(toconv=="£"):
-            print("£")
-        print(saisie)
+            devise_traduite=livrest*float(expression)/dong
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"£")
+            histonav.append(str(devise_traduite)+"£")
+        elif(toconv=="₣"):
+            devise_traduite=francche*float(expression)/dong
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₣")
+            histonav.append(str(devise_traduite)+"₣")
+        elif(toconv=="€"):
+            devise_traduite=euro*float(expression)/dong
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"€")
+            histonav.append(str(devise_traduite)+"€")
+        elif(toconv=="$"):
+            devise_traduite=dollarus*float(expression)/dong
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"$")
+            histonav.append(str(devise_traduite)+"$")
+        elif(toconv=="₽"):
+            devise_traduite=roubleru*float(expression)/dong
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₽")
+            histonav.append(str(devise_traduite)+"₽")
+        elif(toconv=="₹"):
+            devise_traduite=roupiein*float(expression)/dong
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"₹")
+            histonav.append(str(devise_traduite)+"₹")
+        elif(toconv=="¥"):
+            devise_traduite=jpyen*float(expression)/dong
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"¥")
+            histonav.append(str(devise_traduite)+"¥")
+        elif(toconv=="Đ"):
+            devise_traduite=dong*float(expression)/dong
+            devise_traduite=round(devise_traduite,2)
+            resultat.set(str(devise_traduite)+"Đ")
+            histonav.append(str(devise_traduite)+"Đ")
     else:
         resultat.set("Devise non traitable, essayez autre chose...")
     print (histonav)
@@ -151,7 +405,7 @@ page.geometry('420x520')
 lecture=StringVar()
 lecture.set(histform)
 consigne1=Label(page,text="Entrer votre somme ainsi que votre devise.",font=('times 10'), width=35, height=2).place(x=83,y=45)
-consigne2=Label(page,text="La devise écrite en lettre et au singulier.",font=('times 10'), width=35, height=2).place(x=83,y=105)
+consigne2=Label(page,text="La devise écrite en lettre, en minuscule.",font=('times 10'), width=35, height=2).place(x=83,y=105)
 saisie = Entry(page, bd = 5,width=35)
 saisie.place(x=97,y=75)
 resultat=StringVar()
@@ -166,6 +420,6 @@ boutonrouble = Button(page,text="₽",height= 3,command=lambda: clique("₽"), w
 boutonroupie = Button(page,text="₹",height= 3,command=lambda: clique("₹"), width=7,cursor = "hand2").place(x=145,y=245)
 boutonyen = Button(page,text="¥",height= 3,command=lambda: clique("¥"), width=7,cursor = "hand2").place(x=215,y=245)
 boutondong = Button(page,text="Đ",height= 3,command=lambda: clique("Đ"), width=7,cursor = "hand2").place(x=285,y=245)
-histoplus = Button(page,text="🡒",height= 3, width=7,cursor = "hand2").place(x=215,y=425)
-histominus = Button(page,text="🡐",height= 3, width=7,cursor = "hand2").place(x=145,y=425)
+histoplus = Button(page,text="🡒",height= 3,command=lambda: Historique("plus"), width=7,cursor = "hand2").place(x=215,y=425)
+histominus = Button(page,text="🡐",height= 3,command=lambda: Historique("moins"), width=7,cursor = "hand2").place(x=145,y=425)
 page.mainloop()

@@ -402,7 +402,6 @@ def clique(toconv):
             histonav.append(str(devise_traduite)+"Đ")
     else:
         resultat.set("Devise non traitable, essayez autre chose...")
-    print (histonav)
 devise_traduite=0.00
 navig=1
 histonav=["début de l'historique"]
